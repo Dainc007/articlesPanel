@@ -78,7 +78,7 @@ class ArticleController
 
         if (!empty($errors)) {
             $_SESSION['errors'] = $errors;
-            header('Location: /articles/update');
+            header("Location: /articles/update/$id");
             exit;
         }
 
